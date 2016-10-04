@@ -70,8 +70,8 @@ angular.module('notinphillyServerApp')
             $scope.main.onSearchSelect();
           break;
           case 1: // Explore
-            $scope.main.activeTabIndex = 1;
             $scope.main.onExploreSelect();
+            $scope.main.activeTabIndex = 1;
           break;
           case 2: // Login
             ShowLoginForm(true);
