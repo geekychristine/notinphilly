@@ -45,6 +45,8 @@ hr {
   display: none!important;
 }
 
+.smooth, .smooth * { transition: all 500ms; }
+
 .block { display: block!important; overflow:hidden; }
 
 .accessibly-hidden {
@@ -62,8 +64,11 @@ hr {
 
 .bg-white { background-color: #ffffff!important;  }
 .bg-gray { background-color: #ebebeb!important;  }
+.bg-ltgray { background-color: #f5f5f5!important;  }
 .bg-yellow { background-color: #fdc442!important; }
+.bg-ltyellow { background-color: #fff3d9!important; }
 .bg-blue { background-color: #18a0dc!important; }
+.bg-ltblue { background-color: #d9edf7!important; }
 
 .bg-black-70 { background-color: rgba(0,0,0,0.7); }
 .bg-black-90 { background-color: rgba(0,0,0,0.9); }
@@ -123,8 +128,15 @@ hr {
   font-size:16px;
   font-weight:bold;
   margin-right:10px;
+  transition: all 500ms;
 }
 
+.btn--ltgray {
+  background-color: #ccc;
+}
+.btn--ltgray:hover {
+  background-color: #ddd;
+}
 .btn--gray {
   background-color: #b0b0b0;
 }
@@ -198,6 +210,7 @@ hr {
   font-size: 12px; 
   font-weight: bold;
   text-decoration:none; 
+  transition: all 500ms;
 }
 .main-nav a:hover {
   color: #000;
@@ -304,6 +317,9 @@ hr {
   text-align: center;
   line-height: 1;
   border-radius: 50%;
+}
+.social-icons a:hover {
+  background: #999;
 }
 .social-icons i.fa {
   width: 22px;
